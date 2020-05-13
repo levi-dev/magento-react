@@ -11,6 +11,7 @@
         "sort-packages": true
     },
     "require": {
+        "levi/module-core": "dev-master",
         "magento/module-bundle-sample-data": "100.3.*",
         "magento/module-catalog-rule-sample-data": "100.3.*",
         "magento/module-catalog-sample-data": "100.3.*",
@@ -83,12 +84,16 @@
     },
     "version": "2.3.4",
     "minimum-stability": "stable",
-    "repositories": [
-        {
+    "repositories":{
+        "0": {
             "type": "composer",
             "url": "https://repo.magento.com/"
+        },
+        "levi/module-core": {
+            "type": "vcs",
+            "url": "git@github.com:levi-dev/module-core.git"
         }
-    ],
+    },
     "extra": {
         "magento-force": "override"
     }
